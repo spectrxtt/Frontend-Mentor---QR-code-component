@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Outfit&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Outfit regular";
+ }
+
+:root{
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-Light-gray: hsl(212, 45%, 89%);
+    --clr-Grayish-blue: hsl(220, 15%, 55%);
+    --clr-Dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--clr-Light-gray);
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.back {
+    display: flex;
+    margin: 0;
+    background-color: var(--clr-white);
+    width: 300px;
+    height: 440px;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.image img{
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    position: absolute;
+}
+.text h3{
+    display: flex;
+    color: var(--clr-Dark-blue);
+    position: absolute;
+    height: 370px;
+    padding: 1.5rem;
+    flex-direction: column-reverse;
+}
+.text p{
+    display: flex;
+    color: var(--clr-Grayish-blue);
+    font-size: 15px;
+    height: 435px;
+    padding: 1.5rem;
+    position: absolute;
+    flex-direction: column-reverse;
+}
+
+.attribution{
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+
+}
